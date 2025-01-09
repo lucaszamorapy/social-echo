@@ -2,3 +2,4 @@
 /docker-compose.yml
 /backend/config/db.ts
 node_modules*
+dist*
