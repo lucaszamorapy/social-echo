@@ -19,7 +19,7 @@ const startServer = async () => {
     });
   } catch (err) {
     console.error('Erro ao conectar com o banco de dados:', err);
-    setTimeout(startServer, 5000);  // Tenta novamente após 5 segundos
+    setTimeout(startServer, 5000);
   }
 };
 
