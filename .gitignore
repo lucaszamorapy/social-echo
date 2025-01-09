@@ -3,4 +3,4 @@
 /backend/config/db.ts
 node_modules*
 dist*
-/README.md
+*.md
