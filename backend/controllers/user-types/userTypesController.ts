@@ -5,7 +5,8 @@ export const getUserTypesController = async (req: Request, res: Response): Promi
   try {
     const response = await getUserTypes();
     return res.status(200).json(response);
-  } catch (error) {
-    return res.status(400).json({ error: "Ocorreu um erro ao obter os tipos de usuários." });
+  } catch (error: any) {
+    const message = error.message.replace(/^Error:\s*/, "");
+    return res.status(400).json({ error: message });
   }
 };
